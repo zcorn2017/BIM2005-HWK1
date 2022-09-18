@@ -1,8 +1,8 @@
 
-### Torsion Angle at 0$\degree$
+#### Torsion Angle at 0$\degree$
 
 
-#### ./CODE/C2H4Cl2_0_degrees.gzmat
+- ./CODE/C2H4Cl2_0_degrees.gzmat
 
 ```gzmat
 
@@ -23,7 +23,7 @@ Cl 2 1.67 1 109.5 5 0.0
 
     ```
 
-#### ./CODE/C2H4Cl2_0_degrees.xyz
+- ./CODE/C2H4Cl2_0_degrees.xyz
 
 ```xyz
 8
@@ -39,10 +39,10 @@ Cl         2.09746        1.36331        0.78711
 
     ```
 
-### Torsion Angle at 20$\degree$
+#### Torsion Angle at 20$\degree$
 
 
-#### ./CODE/C2H4Cl2_20_degrees.gzmat
+- ./CODE/C2H4Cl2_20_degrees.gzmat
 
 ```gzmat
 
@@ -63,7 +63,7 @@ Cl 2 1.67 1 109.5 5 20.0
 
     ```
 
-#### ./CODE/C2H4Cl2_20_degrees.xyz
+- ./CODE/C2H4Cl2_20_degrees.xyz
 
 ```xyz
 8
@@ -79,10 +79,10 @@ Cl         2.09746        1.01188        1.20592
 
     ```
 
-### Torsion Angle at 40$\degree$
+#### Torsion Angle at 40$\degree$
 
 
-#### ./CODE/C2H4Cl2_40_degrees.gzmat
+- ./CODE/C2H4Cl2_40_degrees.gzmat
 
 ```gzmat
 
@@ -103,7 +103,7 @@ Cl 2 1.67 1 109.5 5 40.0
 
     ```
 
-#### ./CODE/C2H4Cl2_40_degrees.xyz
+- ./CODE/C2H4Cl2_40_degrees.xyz
 
 ```xyz
 8
@@ -119,10 +119,10 @@ Cl         2.09746        0.53841        1.47927
 
     ```
 
-### Torsion Angle at 60$\degree$
+#### Torsion Angle at 60$\degree$
 
 
-#### ./CODE/C2H4Cl2_60_degrees.gzmat
+- ./CODE/C2H4Cl2_60_degrees.gzmat
 
 ```gzmat
 
@@ -143,7 +143,7 @@ Cl 2 1.67 1 109.5 5 60.0
 
     ```
 
-#### ./CODE/C2H4Cl2_60_degrees.xyz
+- ./CODE/C2H4Cl2_60_degrees.xyz
 
 ```xyz
 8
@@ -159,10 +159,10 @@ Cl         2.09746       -0.00000        1.57421
 
     ```
 
-### Torsion Angle at 80$\degree$
+#### Torsion Angle at 80$\degree$
 
 
-#### ./CODE/C2H4Cl2_80_degrees.gzmat
+- ./CODE/C2H4Cl2_80_degrees.gzmat
 
 ```gzmat
 
@@ -183,7 +183,7 @@ Cl 2 1.67 1 109.5 5 80.0
 
     ```
 
-#### ./CODE/C2H4Cl2_80_degrees.xyz
+- ./CODE/C2H4Cl2_80_degrees.xyz
 
 ```xyz
 8
@@ -199,10 +199,10 @@ Cl         2.09746       -0.53841        1.47927
 
     ```
 
-### Torsion Angle at 100$\degree$
+#### Torsion Angle at 100$\degree$
 
 
-#### ./CODE/C2H4Cl2_100_degrees.gzmat
+- ./CODE/C2H4Cl2_100_degrees.gzmat
 
 ```gzmat
 
@@ -223,7 +223,7 @@ Cl 2 1.67 1 109.5 5 100.0
 
     ```
 
-#### ./CODE/C2H4Cl2_100_degrees.xyz
+- ./CODE/C2H4Cl2_100_degrees.xyz
 
 ```xyz
 8
@@ -239,10 +239,10 @@ Cl         2.09746       -1.01188        1.20592
 
     ```
 
-### Torsion Angle at 120$\degree$
+#### Torsion Angle at 120$\degree$
 
 
-#### ./CODE/C2H4Cl2_120_degrees.gzmat
+- ./CODE/C2H4Cl2_120_degrees.gzmat
 
 ```gzmat
 
@@ -263,7 +263,7 @@ Cl 2 1.67 1 109.5 5 120.0
 
     ```
 
-#### ./CODE/C2H4Cl2_120_degrees.xyz
+- ./CODE/C2H4Cl2_120_degrees.xyz
 
 ```xyz
 8
@@ -279,10 +279,10 @@ Cl         2.09746       -1.36331        0.78711
 
     ```
 
-### Torsion Angle at 140$\degree$
+#### Torsion Angle at 140$\degree$
 
 
-#### ./CODE/C2H4Cl2_140_degrees.gzmat
+- ./CODE/C2H4Cl2_140_degrees.gzmat
 
 ```gzmat
 
@@ -303,7 +303,7 @@ Cl 2 1.67 1 109.5 5 140.0
 
     ```
 
-#### ./CODE/C2H4Cl2_140_degrees.xyz
+- ./CODE/C2H4Cl2_140_degrees.xyz
 
 ```xyz
 8
@@ -319,10 +319,10 @@ Cl         2.09746       -1.55030        0.27336
 
     ```
 
-### Torsion Angle at 160$\degree$
+#### Torsion Angle at 160$\degree$
 
 
-#### ./CODE/C2H4Cl2_160_degrees.gzmat
+- ./CODE/C2H4Cl2_160_degrees.gzmat
 
 ```gzmat
 
@@ -343,7 +343,7 @@ Cl 2 1.67 1 109.5 5 160.0
 
     ```
 
-#### ./CODE/C2H4Cl2_160_degrees.xyz
+- ./CODE/C2H4Cl2_160_degrees.xyz
 
 ```xyz
 8
@@ -359,10 +359,10 @@ Cl         2.09746       -1.55030       -0.27336
 
     ```
 
-### Torsion Angle at 180$\degree$
+#### Torsion Angle at 180$\degree$
 
 
-#### ./CODE/C2H4Cl2_180_degrees.gzmat
+- ./CODE/C2H4Cl2_180_degrees.gzmat
 
 ```gzmat
 
@@ -383,7 +383,7 @@ Cl 2 1.67 1 109.5 5 180.0
 
     ```
 
-#### ./CODE/C2H4Cl2_180_degrees.xyz
+- ./CODE/C2H4Cl2_180_degrees.xyz
 
 ```xyz
 8
@@ -399,10 +399,10 @@ Cl         2.09746       -1.36331       -0.78711
 
     ```
 
-### Torsion Angle at 200$\degree$
+#### Torsion Angle at 200$\degree$
 
 
-#### ./CODE/C2H4Cl2_200_degrees.gzmat
+- ./CODE/C2H4Cl2_200_degrees.gzmat
 
 ```gzmat
 
@@ -423,7 +423,7 @@ Cl 2 1.67 1 109.5 5 200.0
 
     ```
 
-#### ./CODE/C2H4Cl2_200_degrees.xyz
+- ./CODE/C2H4Cl2_200_degrees.xyz
 
 ```xyz
 8
@@ -439,10 +439,10 @@ Cl         2.09746       -1.01188       -1.20592
 
     ```
 
-### Torsion Angle at 220$\degree$
+#### Torsion Angle at 220$\degree$
 
 
-#### ./CODE/C2H4Cl2_220_degrees.gzmat
+- ./CODE/C2H4Cl2_220_degrees.gzmat
 
 ```gzmat
 
@@ -463,7 +463,7 @@ Cl 2 1.67 1 109.5 5 220.0
 
     ```
 
-#### ./CODE/C2H4Cl2_220_degrees.xyz
+- ./CODE/C2H4Cl2_220_degrees.xyz
 
 ```xyz
 8
@@ -479,10 +479,10 @@ Cl         2.09746       -0.53841       -1.47927
 
     ```
 
-### Torsion Angle at 240$\degree$
+#### Torsion Angle at 240$\degree$
 
 
-#### ./CODE/C2H4Cl2_240_degrees.gzmat
+- ./CODE/C2H4Cl2_240_degrees.gzmat
 
 ```gzmat
 
@@ -503,7 +503,7 @@ Cl 2 1.67 1 109.5 5 240.0
 
     ```
 
-#### ./CODE/C2H4Cl2_240_degrees.xyz
+- ./CODE/C2H4Cl2_240_degrees.xyz
 
 ```xyz
 8
@@ -519,10 +519,10 @@ Cl         2.09746        0.00000       -1.57421
 
     ```
 
-### Torsion Angle at 260$\degree$
+#### Torsion Angle at 260$\degree$
 
 
-#### ./CODE/C2H4Cl2_260_degrees.gzmat
+- ./CODE/C2H4Cl2_260_degrees.gzmat
 
 ```gzmat
 
@@ -543,7 +543,7 @@ Cl 2 1.67 1 109.5 5 260.0
 
     ```
 
-#### ./CODE/C2H4Cl2_260_degrees.xyz
+- ./CODE/C2H4Cl2_260_degrees.xyz
 
 ```xyz
 8
@@ -559,10 +559,10 @@ Cl         2.09746        0.53841       -1.47927
 
     ```
 
-### Torsion Angle at 280$\degree$
+#### Torsion Angle at 280$\degree$
 
 
-#### ./CODE/C2H4Cl2_280_degrees.gzmat
+- ./CODE/C2H4Cl2_280_degrees.gzmat
 
 ```gzmat
 
@@ -583,7 +583,7 @@ Cl 2 1.67 1 109.5 5 280.0
 
     ```
 
-#### ./CODE/C2H4Cl2_280_degrees.xyz
+- ./CODE/C2H4Cl2_280_degrees.xyz
 
 ```xyz
 8
@@ -599,10 +599,10 @@ Cl         2.09746        1.01188       -1.20592
 
     ```
 
-### Torsion Angle at 300$\degree$
+#### Torsion Angle at 300$\degree$
 
 
-#### ./CODE/C2H4Cl2_300_degrees.gzmat
+- ./CODE/C2H4Cl2_300_degrees.gzmat
 
 ```gzmat
 
@@ -623,7 +623,7 @@ Cl 2 1.67 1 109.5 5 300.0
 
     ```
 
-#### ./CODE/C2H4Cl2_300_degrees.xyz
+- ./CODE/C2H4Cl2_300_degrees.xyz
 
 ```xyz
 8
@@ -639,10 +639,10 @@ Cl         2.09746        1.36331       -0.78711
 
     ```
 
-### Torsion Angle at 320$\degree$
+#### Torsion Angle at 320$\degree$
 
 
-#### ./CODE/C2H4Cl2_320_degrees.gzmat
+- ./CODE/C2H4Cl2_320_degrees.gzmat
 
 ```gzmat
 
@@ -663,7 +663,7 @@ Cl 2 1.67 1 109.5 5 320.0
 
     ```
 
-#### ./CODE/C2H4Cl2_320_degrees.xyz
+- ./CODE/C2H4Cl2_320_degrees.xyz
 
 ```xyz
 8
@@ -679,10 +679,10 @@ Cl         2.09746        1.55030       -0.27336
 
     ```
 
-### Torsion Angle at 340$\degree$
+#### Torsion Angle at 340$\degree$
 
 
-#### ./CODE/C2H4Cl2_340_degrees.gzmat
+- ./CODE/C2H4Cl2_340_degrees.gzmat
 
 ```gzmat
 
@@ -703,7 +703,7 @@ Cl 2 1.67 1 109.5 5 340.0
 
     ```
 
-#### ./CODE/C2H4Cl2_340_degrees.xyz
+- ./CODE/C2H4Cl2_340_degrees.xyz
 
 ```xyz
 8
@@ -719,10 +719,10 @@ Cl         2.09746        1.55030        0.27336
 
     ```
 
-### Torsion Angle at 360$\degree$
+#### Torsion Angle at 360$\degree$
 
 
-#### ./CODE/C2H4Cl2_360_degrees.gzmat
+- ./CODE/C2H4Cl2_360_degrees.gzmat
 
 ```gzmat
 
@@ -743,7 +743,7 @@ Cl 2 1.67 1 109.5 5 0.0
 
     ```
 
-#### ./CODE/C2H4Cl2_360_degrees.xyz
+- ./CODE/C2H4Cl2_360_degrees.xyz
 
 ```xyz
 8

@@ -1,3 +1,0 @@
-Ener of C_2H_4Cl_2 with Torsion Angle at 240 Starts:
-by MMFF94
-by GAFF

@@ -1,9 +1,12 @@
+# This the main program to process the molecule.
+
 from openbabel import openbabel
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+# Set the constant used to convert kCal/mol to kJ/mol
 KCAL2KJ_CONSTANT = 4.184
 
 # The C2H4Cl2 molecule with the torsion angle at 0 degree
@@ -25,8 +28,12 @@ Cl 2 1.67 1 109.5 5 0.0
 
 # Store the code of the 18 modified molecules as a list
 code_list = []
+
 for n in range(0, 19):
+    # Count the reference number of the atoms to determine which atom to manipulate
     atom_counter = 0
+
+    # .xyz code after conversion
     code_aft_cnv = ""
     for line in gzmat_code.split("\n"):
         words = line.split()
@@ -59,6 +66,7 @@ for code, angle in zip(code_list, range(0, 380, 20)):
     with open(f"./CODE/C2H4Cl2_{angle}_degrees.gzmat", "w") as gzmat_file:
         gzmat_file.write(code)
 
+# Set the input format to gzmat and the output format to xyz
 OB_converter = openbabel.OBConversion()
 OB_converter.SetInAndOutFormats("gzmat", "xyz")
 
@@ -69,25 +77,25 @@ GAFF_abs_energy_in_KJ_list = []
 for angle in range(0, 380, 20):
     mol_C2H4Cl2 = openbabel.OBMol()
 
-    # Using MMFF94 and GAFF to calculate the absolute energy
-
+    # Use MMFF94 and GAFF to calculate the absolute energy
     OB_converter.ReadFile(mol_C2H4Cl2, f"./CODE/C2H4Cl2_{angle}_degrees.gzmat")
 
     MMFF94_forcefield = openbabel.OBForceField.FindForceField("MMFF94")
     GAFF_forcefield = openbabel.OBForceField.FindForceField("GAFF")
 
-    # with open(f"./ENERGY/ENERGY_LOG_C2H4Cl2_{angle}_degrees.txt", "w") as sys.stdout:
-
+    # Redirect the log output to std::cout
     MMFF94_forcefield.SetLogToStdOut()
     GAFF_forcefield.SetLogToStdOut()
 
+    # Set the priority of log to high
     MMFF94_forcefield.SetLogLevel(openbabel.OBFF_LOGLVL_HIGH)
     GAFF_forcefield.SetLogLevel(openbabel.OBFF_LOGLVL_HIGH)
 
+    # Specify the molecule we calculate the energy of
     MMFF94_forcefield.Setup(mol_C2H4Cl2)
     GAFF_forcefield.Setup(mol_C2H4Cl2)
 
-    # Energy of C_2H_4Cl_2 with Torsion Angle at {angle} Degrees Starts:
+    # Energy of C_2H_4Cl_2 with Torsion Angle at `angle` Degrees Starts
     # by MMFF94
     MMFF94_abs_energy_in_Kcal = MMFF94_forcefield.Energy()
     # by GAFF
@@ -95,8 +103,6 @@ for angle in range(0, 380, 20):
 
     MMFF94_abs_energy_in_Kcal_list.append(MMFF94_abs_energy_in_Kcal)
     GAFF_abs_energy_in_KJ_list.append(GAFF_abs_energy_in_KJ)
-    with open("log.txt","a") as a:
-        a.write(str(MMFF94_abs_energy_in_Kcal)+"\n")
 
     OB_converter.WriteFile(mol_C2H4Cl2, f"./CODE/C2H4Cl2_{angle}_degrees.xyz")
 
@@ -145,10 +151,13 @@ data_dict = {
     "Relative Energy (kJ/mol) by MMFF94": np.round(MMFF94_rel_energy_in_KJ_vec.tolist(), 3),
     "Relative Energy (kJ/mol) by GAFF": np.round(GAFF_rel_energy_in_KJ_vec.tolist(), 3)
 }
+
 data_df = pd.DataFrame(data_dict, index=[angle for angle in range(0, 380, 20)])
+data_df.index.name = "Angle (degree)"
 data_df.to_csv("./DATA/data.csv")
-# with open(f"./ENERGY/ENERGY_C2H4Cl2_{angle}_degrees.txt", "w") as sys.stdout:
-sns.lineplot(data=data_df.loc[:,["Relative Energy (kcal/mol) by MMFF94","Relative Energy (kcal/mol) by GAFF"]])
+
+# Plot the lineplot of relative energy in kcal/mol with respect to angle in degrees
+lineplot_df = data_df.loc[:,["Relative Energy (kcal/mol) by MMFF94","Relative Energy (kcal/mol) by GAFF"]]
+sns.lineplot(data=lineplot_df)
+
 plt.savefig("rel_energy.png")
-
-
