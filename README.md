@@ -6,7 +6,7 @@
      - [GitHub Repo File Hierarchy](#github-repo-file-hierarchy)
      - [Results](#results)
           - [I .gzmat and .xyz Files for a Specific Torsion Angle](#i-gzmat-and-xyz-files-for-a-specific-torsion-angle)
-               - [Torsion Angle at $0\degree$](#torsion-angle-at-0degree)
+          		 - [Torsion Angle at $0\degree$](#torsion-angle-at-0degree)
                - [Torsion Angle at $20\degree$](#torsion-angle-at-20degree)
                - [Torsion Angle at $40\degree$](#torsion-angle-at-40degree)
                - [Torsion Angle at $60\degree$](#torsion-angle-at-60degree)
@@ -25,6 +25,7 @@
                - [Torsion Angle at $320\degree$](#torsion-angle-at-320degree)
                - [Torsion Angle at $340\degree$](#torsion-angle-at-340degree)
                - [Torsion Angle at $360\degree$](#torsion-angle-at-360degree)
+            
           - [II Energy Overview](#ii-energy-overview)
           - [III Lineplot of Relative Energy in Kcal by MMFF94 and GAFF](#iii-lineplot-of-relative-energy-in-kcal-by-mmff94-and-gaff)
      - [Appendix](#appendix)
@@ -78,7 +79,7 @@ C2H4Cl2
 7. All the .xyz and .gzmat files could be found in [Reuslts I](#I-.gzmat-and-.xyz-Files-for-a-Specific-Torsion-Angle). 
 8. Pre-processing of the data includes conversion between kcal/mol and kJ/mol and calculations of the relative energy.
 9. A table where all the data for the angles is established by [Pandas][] and it could be found in [Results II](#II-Energy-Overview).
-10. A lineplot of relative energy in kcal/mol with respect to angle in degrees is displayed by [Seaborn][https://seaborn.pydata.org/]. For details, please refer to [Result III](#III-Lineplot-of-Relative-Energy-in-Kcal-by-MMFF94-and-GAFF)
+10. A lineplot of relative energy in kcal/mol with respect to angle in degrees is displayed by [Seaborn][]. For details, please refer to [Result III](#III-Lineplot-of-Relative-Energy-in-Kcal-by-MMFF94-and-GAFF)
 
 ## GitHub Repo File Hierarchy
 
