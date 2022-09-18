@@ -1,0 +1,53 @@
+.
+├── C2H4Cl2_structure.png
+├── CODE
+│   ├── C2H4Cl2_0_degrees.gzmat
+│   ├── C2H4Cl2_0_degrees.xyz
+│   ├── C2H4Cl2_100_degrees.gzmat
+│   ├── C2H4Cl2_100_degrees.xyz
+│   ├── C2H4Cl2_120_degrees.gzmat
+│   ├── C2H4Cl2_120_degrees.xyz
+│   ├── C2H4Cl2_140_degrees.gzmat
+│   ├── C2H4Cl2_140_degrees.xyz
+│   ├── C2H4Cl2_160_degrees.gzmat
+│   ├── C2H4Cl2_160_degrees.xyz
+│   ├── C2H4Cl2_180_degrees.gzmat
+│   ├── C2H4Cl2_180_degrees.xyz
+│   ├── C2H4Cl2_200_degrees.gzmat
+│   ├── C2H4Cl2_200_degrees.xyz
+│   ├── C2H4Cl2_20_degrees.gzmat
+│   ├── C2H4Cl2_20_degrees.xyz
+│   ├── C2H4Cl2_220_degrees.gzmat
+│   ├── C2H4Cl2_220_degrees.xyz
+│   ├── C2H4Cl2_240_degrees.gzmat
+│   ├── C2H4Cl2_240_degrees.xyz
+│   ├── C2H4Cl2_260_degrees.gzmat
+│   ├── C2H4Cl2_260_degrees.xyz
+│   ├── C2H4Cl2_280_degrees.gzmat
+│   ├── C2H4Cl2_280_degrees.xyz
+│   ├── C2H4Cl2_300_degrees.gzmat
+│   ├── C2H4Cl2_300_degrees.xyz
+│   ├── C2H4Cl2_320_degrees.gzmat
+│   ├── C2H4Cl2_320_degrees.xyz
+│   ├── C2H4Cl2_340_degrees.gzmat
+│   ├── C2H4Cl2_340_degrees.xyz
+│   ├── C2H4Cl2_360_degrees.gzmat
+│   ├── C2H4Cl2_360_degrees.xyz
+│   ├── C2H4Cl2_40_degrees.gzmat
+│   ├── C2H4Cl2_40_degrees.xyz
+│   ├── C2H4Cl2_60_degrees.gzmat
+│   ├── C2H4Cl2_60_degrees.xyz
+│   ├── C2H4Cl2_80_degrees.gzmat
+│   └── C2H4Cl2_80_degrees.xyz
+├── DATA
+│   ├── data.csv
+│   ├── data_in_KJ.csv
+│   └── data_in_Kcal.csv
+├── README.md
+├── XYZ_GAMAT_SUMMARY.md
+├── code2mkdoc.py
+├── file_tree.txt
+├── rel_energy.png
+└── torsion_angle.py
+
+2 directories, 48 files

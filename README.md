@@ -1,4 +1,37 @@
-[TOC]
+# Table of Contents
+
+- [BIM2005: Homework I](#bim2005-homework-i)
+     - [Preparation](#preparation)
+     - [Procedure](#procedure)
+     - [GitHub Repo File Hierarchy](#github-repo-file-hierarchy)
+     - [Results](#results)
+          - [I .gzmat and .xyz Files for a Specific Torsion Angle](#i-gzmat-and-xyz-files-for-a-specific-torsion-angle)
+               - [Torsion Angle at 0$\degree$](#torsion-angle-at-0degree)
+               - [Torsion Angle at 20$\degree$](#torsion-angle-at-20degree)
+               - [Torsion Angle at 40$\degree$](#torsion-angle-at-40degree)
+               - [Torsion Angle at 60$\degree$](#torsion-angle-at-60degree)
+               - [Torsion Angle at 80$\degree$](#torsion-angle-at-80degree)
+               - [Torsion Angle at 100$\degree$](#torsion-angle-at-100degree)
+               - [Torsion Angle at 120$\degree$](#torsion-angle-at-120degree)
+               - [Torsion Angle at 140$\degree$](#torsion-angle-at-140degree)
+               - [Torsion Angle at 160$\degree$](#torsion-angle-at-160degree)
+               - [Torsion Angle at 180$\degree$](#torsion-angle-at-180degree)
+               - [Torsion Angle at 200$\degree$](#torsion-angle-at-200degree)
+               - [Torsion Angle at 220$\degree$](#torsion-angle-at-220degree)
+               - [Torsion Angle at 240$\degree$](#torsion-angle-at-240degree)
+               - [Torsion Angle at 260$\degree$](#torsion-angle-at-260degree)
+               - [Torsion Angle at 280$\degree$](#torsion-angle-at-280degree)
+               - [Torsion Angle at 300$\degree$](#torsion-angle-at-300degree)
+               - [Torsion Angle at 320$\degree$](#torsion-angle-at-320degree)
+               - [Torsion Angle at 340$\degree$](#torsion-angle-at-340degree)
+               - [Torsion Angle at 360$\degree$](#torsion-angle-at-360degree)
+          - [II Energy Overview](#ii-energy-overview)
+          - [III Lineplot of Relative Energy in Kcal by MMFF94 and GAFF](#iii-lineplot-of-relative-energy-in-kcal-by-mmff94-and-gaff)
+     - [Appendix](#appendix)
+          - [I Code](#i-code)
+               - [torsion_angle.py](#torsion_anglepy)
+               - [code2mkdoc.py](#code2mkdocpy)
+          - [II Analysis of the Energy](#ii-analysis-of-the-energy)
 
 # BIM2005: Homework I
 
@@ -40,6 +73,67 @@ C2H4Cl2
 8. Pre-processing of the data includes conversion between kcal/mol and kJ/mol and calculations of the relative energy.
 9. A table where all the data for the angles is established by [Pandas][] and it could be found in [Results II](#II-Energy-Overview).
 10. A lineplot of relative energy in kcal/mol with respect to angle in degrees is displayed by [Seaborn][https://seaborn.pydata.org/]. For details, please refer to [Result III](#III-Lineplot-of-Relative-Energy-in-Kcal-by-MMFF94-and-GAFF)
+
+## GitHub Repo File Hierarchy
+
+```
+.
+├── C2H4Cl2_structure.png      		// the 2D molecule structure overview
+├── CODE													// the directory containing all the .xyz and .gzmat file
+│   ├── C2H4Cl2_0_degrees.gzmat
+│   ├── C2H4Cl2_0_degrees.xyz
+│   ├── C2H4Cl2_100_degrees.gzmat
+│   ├── C2H4Cl2_100_degrees.xyz
+│   ├── C2H4Cl2_120_degrees.gzmat
+│   ├── C2H4Cl2_120_degrees.xyz
+│   ├── C2H4Cl2_140_degrees.gzmat
+│   ├── C2H4Cl2_140_degrees.xyz
+│   ├── C2H4Cl2_160_degrees.gzmat
+│   ├── C2H4Cl2_160_degrees.xyz
+│   ├── C2H4Cl2_180_degrees.gzmat
+│   ├── C2H4Cl2_180_degrees.xyz
+│   ├── C2H4Cl2_200_degrees.gzmat
+│   ├── C2H4Cl2_200_degrees.xyz
+│   ├── C2H4Cl2_20_degrees.gzmat
+│   ├── C2H4Cl2_20_degrees.xyz
+│   ├── C2H4Cl2_220_degrees.gzmat
+│   ├── C2H4Cl2_220_degrees.xyz
+│   ├── C2H4Cl2_240_degrees.gzmat
+│   ├── C2H4Cl2_240_degrees.xyz
+│   ├── C2H4Cl2_260_degrees.gzmat
+│   ├── C2H4Cl2_260_degrees.xyz
+│   ├── C2H4Cl2_280_degrees.gzmat
+│   ├── C2H4Cl2_280_degrees.xyz
+│   ├── C2H4Cl2_300_degrees.gzmat
+│   ├── C2H4Cl2_300_degrees.xyz
+│   ├── C2H4Cl2_320_degrees.gzmat
+│   ├── C2H4Cl2_320_degrees.xyz
+│   ├── C2H4Cl2_340_degrees.gzmat
+│   ├── C2H4Cl2_340_degrees.xyz
+│   ├── C2H4Cl2_360_degrees.gzmat
+│   ├── C2H4Cl2_360_degrees.xyz
+│   ├── C2H4Cl2_40_degrees.gzmat
+│   ├── C2H4Cl2_40_degrees.xyz
+│   ├── C2H4Cl2_60_degrees.gzmat
+│   ├── C2H4Cl2_60_degrees.xyz
+│   ├── C2H4Cl2_80_degrees.gzmat
+│   └── C2H4Cl2_80_degrees.xyz
+├── DATA														// .csv table file containing all the energy data
+│   ├── data.csv
+│   ├── data_in_KJ.csv
+│   └── data_in_Kcal.csv
+├── README.md											 // This file you are in
+├── XYZ_GAMAT_SUMMARY.md					 // (Not Important)
+├── code2mkdoc.py										// The script used to facilitate the processing of the documentation
+├── file_tree.txt									// The file tree (Not Important)
+└── requirements.txt              // All the requirements in my environment to run this script and some of them are redundant for you
+├── rel_energy.png								// Lineplot of the relative energy in kcal/mol
+└── torsion_angle.py							// The main program to process the molecule
+
+2 directories, 49 files
+```
+
+
 
 ## Results
 ### I .gzmat and .xyz Files for a Specific Torsion Angle
@@ -835,7 +929,209 @@ Cl         2.09746        1.36331        0.78711
 
 ### I Code
 
+#### torsion_angle.py
 
+```python
+# This the main program to process the molecule.
+
+from openbabel import openbabel
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Set the constant used to convert kCal/mol to kJ/mol
+KCAL2KJ_CONSTANT = 4.184
+
+# The C2H4Cl2 molecule with the torsion angle at 0 degree
+gzmat_code = """
+#
+
+C2H4Cl2
+
+0 1
+C
+C 1 1.54
+H 1 1.0 2 109.5
+H 1 1.0 2 109.5 3 120.0
+Cl 1 1.67 2 109.5 4 120.0
+H 2 1.0 1 109.5 5 -120.0
+H 2 1.0 1 109.5 5 120.0
+Cl 2 1.67 1 109.5 5 0.0
+"""
+
+# Store the code of the 18 modified molecules as a list
+code_list = []
+
+for n in range(0, 19):
+    # Count the reference number of the atoms to determine which atom to manipulate
+    atom_counter = 0
+
+    # .xyz code after conversion
+    code_aft_cnv = ""
+    for line in gzmat_code.split("\n"):
+        words = line.split()
+
+        # if the line is empty, do not make modifications
+        if len(words) == 0:
+            pass
+
+        # if the title is met, rename the title to mark it with the torsion angle
+        elif line.startswith("C2H4Cl2"):
+            words.append(str(20 * n))
+            words.append("degrees")
+            code_aft_cnv = code_aft_cnv + "-".join(words) + "\n"
+            continue
+
+        elif words[0].isalpha() and len(words[0]) in [1, 2]:
+            atom_counter = atom_counter + 1
+
+            if atom_counter in [6, 7, 8]:
+
+                words[-1] = str(float(words[-1]) + 20 * n)
+                if float(words[-1]) >= 360:
+                    words[-1] = str(float(words[-1]) - 360)
+
+        code_aft_cnv = code_aft_cnv + " ".join(words) + "\n"
+    code_list.append(code_aft_cnv)
+
+# Write the code to the .gzmat format
+for code, angle in zip(code_list, range(0, 380, 20)):
+    with open(f"./CODE/C2H4Cl2_{angle}_degrees.gzmat", "w") as gzmat_file:
+        gzmat_file.write(code)
+
+# Set the input format to gzmat and the output format to xyz
+OB_converter = openbabel.OBConversion()
+OB_converter.SetInAndOutFormats("gzmat", "xyz")
+
+MMFF94_abs_energy_in_Kcal_list = []
+GAFF_abs_energy_in_KJ_list = []
+
+# Convert the .gzmat files to .xyz file via OpenBabel
+for angle in range(0, 380, 20):
+    mol_C2H4Cl2 = openbabel.OBMol()
+
+    # Use MMFF94 and GAFF to calculate the absolute energy
+    OB_converter.ReadFile(mol_C2H4Cl2, f"./CODE/C2H4Cl2_{angle}_degrees.gzmat")
+
+    MMFF94_forcefield = openbabel.OBForceField.FindForceField("MMFF94")
+    GAFF_forcefield = openbabel.OBForceField.FindForceField("GAFF")
+
+    # Redirect the log output to std::cout
+    MMFF94_forcefield.SetLogToStdOut()
+    GAFF_forcefield.SetLogToStdOut()
+
+    # Set the priority of log to high
+    MMFF94_forcefield.SetLogLevel(openbabel.OBFF_LOGLVL_HIGH)
+    GAFF_forcefield.SetLogLevel(openbabel.OBFF_LOGLVL_HIGH)
+
+    # Specify the molecule we calculate the energy of
+    MMFF94_forcefield.Setup(mol_C2H4Cl2)
+    GAFF_forcefield.Setup(mol_C2H4Cl2)
+
+    # Energy of C_2H_4Cl_2 with Torsion Angle at `angle` Degrees Starts
+    # by MMFF94
+    MMFF94_abs_energy_in_Kcal = MMFF94_forcefield.Energy()
+    # by GAFF
+    GAFF_abs_energy_in_KJ = GAFF_forcefield.Energy()
+
+    MMFF94_abs_energy_in_Kcal_list.append(MMFF94_abs_energy_in_Kcal)
+    GAFF_abs_energy_in_KJ_list.append(GAFF_abs_energy_in_KJ)
+
+    OB_converter.WriteFile(mol_C2H4Cl2, f"./CODE/C2H4Cl2_{angle}_degrees.xyz")
+
+# Construct a table containing the information required by the question
+ref_MMFF94_energy_in_Kcal = min(MMFF94_abs_energy_in_Kcal_list)
+ref_GAFF_energy_in_KJ = min(GAFF_abs_energy_in_KJ_list)
+
+MMFF94_abs_energy_in_Kcal_vec = np.array(MMFF94_abs_energy_in_Kcal_list)
+GAFF_abs_energy_in_KJ_vec = np.array(GAFF_abs_energy_in_KJ_list)
+
+MMFF94_abs_energy_in_KJ_vec = KCAL2KJ_CONSTANT * MMFF94_abs_energy_in_Kcal_vec
+GAFF_abs_energy_in_Kcal_vec = GAFF_abs_energy_in_KJ_vec / KCAL2KJ_CONSTANT
+
+MMFF94_rel_energy_in_Kcal_vec = MMFF94_abs_energy_in_Kcal_vec - ref_MMFF94_energy_in_Kcal
+GAFF_rel_energy_in_KJ_vec = GAFF_abs_energy_in_KJ_vec - ref_GAFF_energy_in_KJ
+
+MMFF94_rel_energy_in_KJ_vec = MMFF94_abs_energy_in_KJ_vec - KCAL2KJ_CONSTANT * ref_MMFF94_energy_in_Kcal
+GAFF_rel_energy_in_Kcal_vec = GAFF_abs_energy_in_Kcal_vec - ref_GAFF_energy_in_KJ / KCAL2KJ_CONSTANT
+
+data_in_Kcal_dict = {
+    "Absolute Energy (kcal/mol) by MMFF94" : MMFF94_abs_energy_in_Kcal_vec.tolist(),
+    "Absolute Energy (kcal/mol) by GAFF" : GAFF_abs_energy_in_Kcal_vec.tolist(),
+    "Relative Energy (kcal/mol) by MMFF94" : MMFF94_rel_energy_in_Kcal_vec.tolist(),
+    "Relative Energy (kcal/mol) by GAFF" : GAFF_rel_energy_in_Kcal_vec.tolist()
+}
+data_in_KJ_dict = {
+    "Absolute Energy (kJ/mol) by MMFF94" : MMFF94_abs_energy_in_KJ_vec.tolist(),
+    "Absolute Energy (kJ/mol) by GAFF" : GAFF_abs_energy_in_KJ_vec.tolist(),
+    "Relative Energy (kJ/mol) by MMFF94" : MMFF94_rel_energy_in_KJ_vec.tolist(),
+    "Relative Energy (kJ/mol) by GAFF" : GAFF_rel_energy_in_KJ_vec.tolist()
+}
+
+data_in_Kcal_df = pd.DataFrame(data_in_Kcal_dict,index=[angle for angle in range(0, 380, 20)])
+data_in_KJ_df = pd.DataFrame(data_in_KJ_dict,index=[angle for angle in range(0, 380, 20)])
+
+data_in_Kcal_df.to_csv("./DATA/data_in_Kcal.csv")
+data_in_KJ_df.to_csv("./DATA/data_in_KJ.csv")
+
+data_dict = {
+    "Absolute Energy (kcal/mol) by MMFF94": np.round(MMFF94_abs_energy_in_Kcal_vec.tolist(), 3),
+    "Absolute Energy (kcal/mol) by GAFF": np.round(GAFF_abs_energy_in_Kcal_vec.tolist(), 3),
+    "Relative Energy (kcal/mol) by MMFF94": np.round(MMFF94_rel_energy_in_Kcal_vec.tolist(), 3),
+    "Relative Energy (kcal/mol) by GAFF": np.round(GAFF_rel_energy_in_Kcal_vec.tolist(), 3),
+    "Absolute Energy (kJ/mol) by MMFF94": np.round(MMFF94_abs_energy_in_KJ_vec.tolist(), 3),
+    "Absolute Energy (kJ/mol) by GAFF": np.round(GAFF_abs_energy_in_KJ_vec.tolist(), 3),
+    "Relative Energy (kJ/mol) by MMFF94": np.round(MMFF94_rel_energy_in_KJ_vec.tolist(), 3),
+    "Relative Energy (kJ/mol) by GAFF": np.round(GAFF_rel_energy_in_KJ_vec.tolist(), 3)
+}
+
+data_df = pd.DataFrame(data_dict, index=[angle for angle in range(0, 380, 20)])
+data_df.index.name = "Angle (degree)"
+data_df.to_csv("./DATA/data.csv")
+
+# Plot the lineplot of relative energy in kcal/mol with respect to angle in degrees
+lineplot_df = data_df.loc[:,["Relative Energy (kcal/mol) by MMFF94","Relative Energy (kcal/mol) by GAFF"]]
+sns.lineplot(data=lineplot_df)
+
+plt.savefig("rel_energy.png")
+```
+
+####  code2mkdoc.py
+
+```python
+# This script aims to facilitate the gerneration of the documentation
+# which is not part of the main program.
+# For the homework solution,
+# pls refer to torsion_angle.py
+
+import sys
+
+# Add heading to the Markdown file
+def mkdoc_heading(heading, level=1):
+    heading_level = "#" * level + " " + heading + "\n"
+    print(f"""
+{heading_level}""")
+
+# Wrap the code to make it be recognised by the Markdown parser
+def wrap_code(code, lang="python"):
+    print(f"""```{lang}
+{code}
+    ```""")
+
+# Redirect the output to the file writing object.
+with open("XYZ_GAMAT_SUMMARY.md","w") as sys.stdout:
+    for angle in range(0, 380, 20):
+        mkdoc_heading(f"Torsion Angle at {angle}$\degree$", level= 4)
+
+        print(f"\n- ./CODE/C2H4Cl2_{angle}_degrees.gzmat\n")
+        with open(f"./CODE/C2H4Cl2_{angle}_degrees.gzmat", "r")  as gzmat:
+            wrap_code(gzmat.read(), lang="gzmat")
+
+        print(f"\n- ./CODE/C2H4Cl2_{angle}_degrees.xyz\n")
+        with open(f"./CODE/C2H4Cl2_{angle}_degrees.xyz", "r") as xyz:
+            wrap_code(xyz.read(), lang="xyz")
+```
 
 ### II Analysis of the Energy
 
