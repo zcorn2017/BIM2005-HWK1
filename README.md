@@ -33,11 +33,17 @@
                - [code2mkdoc.py](#code2mkdocpy)
           - [II Analysis of the Energy](#ii-analysis-of-the-energy)
 
+<div style="page-break-after: always;"></div>
+
 # BIM2005: Homework I
 
 > In this report, the 'we' term may be preferred by convention rather than by a result of collaboration.
 
 ## Preparation
+
+- Structure of $C_2 H_4 Cl_2$ (For reference)
+
+![C2H4Cl2_structure](C2H4Cl2_structure.png)
 
 - Headers are added to to the initial .gzmat code as below.
 
@@ -59,7 +65,7 @@ C2H4Cl2
 
 ## Procedure
 
-> Details of implementation could be found in the GitHub repository [zcorn2017/BIM2001-HWK1 (github.com)](https://github.com/zcorn2017/BIM2001-HWK1).
+> Details of implementation could be found in the GitHub repository [zcorn2017/BIM2005-HWK1 (github.com)](https://github.com/zcorn2017/BIM2005-HWK1).
 >
 > **The comments to and styles of the code has been organised well to make it highly readable.**
 
