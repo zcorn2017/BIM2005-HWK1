@@ -6,25 +6,25 @@
      - [GitHub Repo File Hierarchy](#github-repo-file-hierarchy)
      - [Results](#results)
           - [I .gzmat and .xyz Files for a Specific Torsion Angle](#i-gzmat-and-xyz-files-for-a-specific-torsion-angle)
-               - [Torsion Angle at 0$\degree$](#torsion-angle-at-0degree)
-               - [Torsion Angle at 20$\degree$](#torsion-angle-at-20degree)
-               - [Torsion Angle at 40$\degree$](#torsion-angle-at-40degree)
-               - [Torsion Angle at 60$\degree$](#torsion-angle-at-60degree)
-               - [Torsion Angle at 80$\degree$](#torsion-angle-at-80degree)
-               - [Torsion Angle at 100$\degree$](#torsion-angle-at-100degree)
-               - [Torsion Angle at 120$\degree$](#torsion-angle-at-120degree)
-               - [Torsion Angle at 140$\degree$](#torsion-angle-at-140degree)
-               - [Torsion Angle at 160$\degree$](#torsion-angle-at-160degree)
-               - [Torsion Angle at 180$\degree$](#torsion-angle-at-180degree)
-               - [Torsion Angle at 200$\degree$](#torsion-angle-at-200degree)
-               - [Torsion Angle at 220$\degree$](#torsion-angle-at-220degree)
-               - [Torsion Angle at 240$\degree$](#torsion-angle-at-240degree)
-               - [Torsion Angle at 260$\degree$](#torsion-angle-at-260degree)
-               - [Torsion Angle at 280$\degree$](#torsion-angle-at-280degree)
-               - [Torsion Angle at 300$\degree$](#torsion-angle-at-300degree)
-               - [Torsion Angle at 320$\degree$](#torsion-angle-at-320degree)
-               - [Torsion Angle at 340$\degree$](#torsion-angle-at-340degree)
-               - [Torsion Angle at 360$\degree$](#torsion-angle-at-360degree)
+               - [Torsion Angle at $0\degree$](#torsion-angle-at-0degree)
+               - [Torsion Angle at $20\degree$](#torsion-angle-at-20degree)
+               - [Torsion Angle at $40\degree$](#torsion-angle-at-40degree)
+               - [Torsion Angle at $60\degree$](#torsion-angle-at-60degree)
+               - [Torsion Angle at $80\degree$](#torsion-angle-at-80degree)
+               - [Torsion Angle at $100\degree$](#torsion-angle-at-100degree)
+               - [Torsion Angle at $120\degree$](#torsion-angle-at-120degree)
+               - [Torsion Angle at $140\degree$](#torsion-angle-at-140degree)
+               - [Torsion Angle at $160\degree$](#torsion-angle-at-160degree)
+               - [Torsion Angle at $180\degree$](#torsion-angle-at-180degree)
+               - [Torsion Angle at $200\degree$](#torsion-angle-at-200degree)
+               - [Torsion Angle at $220\degree$](#torsion-angle-at-220degree)
+               - [Torsion Angle at $240\degree$](#torsion-angle-at-240degree)
+               - [Torsion Angle at $260\degree$](#torsion-angle-at-260degree)
+               - [Torsion Angle at $280\degree$](#torsion-angle-at-280degree)
+               - [Torsion Angle at $300\degree$](#torsion-angle-at-300degree)
+               - [Torsion Angle at $320\degree$](#torsion-angle-at-320degree)
+               - [Torsion Angle at $340\degree$](#torsion-angle-at-340degree)
+               - [Torsion Angle at $360\degree$](#torsion-angle-at-360degree)
           - [II Energy Overview](#ii-energy-overview)
           - [III Lineplot of Relative Energy in Kcal by MMFF94 and GAFF](#iii-lineplot-of-relative-energy-in-kcal-by-mmff94-and-gaff)
      - [Appendix](#appendix)
@@ -138,7 +138,7 @@ C2H4Cl2
 ## Results
 ### I .gzmat and .xyz Files for a Specific Torsion Angle
 
-#### Torsion Angle at 0$\degree$
+#### Torsion Angle at $0\degree$
 
 
 - ./CODE/C2H4Cl2_0_degrees.gzmat
@@ -178,7 +178,7 @@ Cl         2.09746        1.36331        0.78711
 
 ```
 
-#### Torsion Angle at 20$\degree$
+#### Torsion Angle at $20\degree$
 
 
 - ./CODE/C2H4Cl2_20_degrees.gzmat
@@ -218,7 +218,7 @@ Cl         2.09746        1.01188        1.20592
 
 ```
 
-#### Torsion Angle at 40$\degree$
+#### Torsion Angle at $40\degree$
 
 
 - ./CODE/C2H4Cl2_40_degrees.gzmat
@@ -258,7 +258,7 @@ Cl         2.09746        0.53841        1.47927
 
 ```
 
-#### Torsion Angle at 60$\degree$
+#### Torsion Angle at $60\degree$
 
 
 - ./CODE/C2H4Cl2_60_degrees.gzmat
@@ -298,7 +298,7 @@ Cl         2.09746       -0.00000        1.57421
 
 ```
 
-#### Torsion Angle at 80$\degree$
+#### Torsion Angle at $80\degree$
 
 
 - ./CODE/C2H4Cl2_80_degrees.gzmat
@@ -338,7 +338,7 @@ Cl         2.09746       -0.53841        1.47927
 
 ```
 
-#### Torsion Angle at 100$\degree$
+#### Torsion Angle at $100\degree$
 
 
 - ./CODE/C2H4Cl2_100_degrees.gzmat
@@ -378,7 +378,7 @@ Cl         2.09746       -1.01188        1.20592
 
 ```
 
-#### Torsion Angle at 120$\degree$
+#### Torsion Angle at $120\degree$
 
 
 - ./CODE/C2H4Cl2_120_degrees.gzmat
@@ -418,7 +418,7 @@ Cl         2.09746       -1.36331        0.78711
 
 ```
 
-#### Torsion Angle at 140$\degree$
+#### Torsion Angle at $140\degree$
 
 
 - ./CODE/C2H4Cl2_140_degrees.gzmat
@@ -458,7 +458,7 @@ Cl         2.09746       -1.55030        0.27336
 
 ```
 
-#### Torsion Angle at 160$\degree$
+#### Torsion Angle at $160\degree$
 
 
 - ./CODE/C2H4Cl2_160_degrees.gzmat
@@ -498,7 +498,7 @@ Cl         2.09746       -1.55030       -0.27336
 
 ```
 
-#### Torsion Angle at 180$\degree$
+#### Torsion Angle at $180\degree$
 
 
 - ./CODE/C2H4Cl2_180_degrees.gzmat
@@ -538,7 +538,7 @@ Cl         2.09746       -1.36331       -0.78711
 
 ```
 
-#### Torsion Angle at 200$\degree$
+#### Torsion Angle at $200\degree$
 
 
 - ./CODE/C2H4Cl2_200_degrees.gzmat
@@ -578,7 +578,7 @@ Cl         2.09746       -1.01188       -1.20592
 
 ```
 
-#### Torsion Angle at 220$\degree$
+#### Torsion Angle at $220\degree$
 
 
 - ./CODE/C2H4Cl2_220_degrees.gzmat
@@ -618,7 +618,7 @@ Cl         2.09746       -0.53841       -1.47927
 
 ```
 
-#### Torsion Angle at 240$\degree$
+#### Torsion Angle at $240\degree$
 
 
 - ./CODE/C2H4Cl2_240_degrees.gzmat
@@ -658,7 +658,7 @@ Cl         2.09746        0.00000       -1.57421
 
 ```
 
-#### Torsion Angle at 260$\degree$
+#### Torsion Angle at $260\degree$
 
 
 - ./CODE/C2H4Cl2_260_degrees.gzmat
@@ -698,7 +698,7 @@ Cl         2.09746        0.53841       -1.47927
 
 ```
 
-#### Torsion Angle at 280$\degree$
+#### Torsion Angle at $280\degree$
 
 
 - ./CODE/C2H4Cl2_280_degrees.gzmat
@@ -738,7 +738,7 @@ Cl         2.09746        1.01188       -1.20592
 
 ```
 
-#### Torsion Angle at 300$\degree$
+#### Torsion Angle at $300\degree$
 
 
 - ./CODE/C2H4Cl2_300_degrees.gzmat
@@ -778,7 +778,7 @@ Cl         2.09746        1.36331       -0.78711
 
 ```
 
-#### Torsion Angle at 320$\degree$
+#### Torsion Angle at $320\degree$
 
 
 - ./CODE/C2H4Cl2_320_degrees.gzmat
@@ -818,7 +818,7 @@ Cl         2.09746        1.55030       -0.27336
 
 ```
 
-#### Torsion Angle at 340$\degree$
+#### Torsion Angle at $340\degree$
 
 
 - ./CODE/C2H4Cl2_340_degrees.gzmat
@@ -858,7 +858,7 @@ Cl         2.09746        1.55030        0.27336
 
 ```
 
-#### Torsion Angle at 360$\degree$
+#### Torsion Angle at $360\degree$
 
 
 - ./CODE/C2H4Cl2_360_degrees.gzmat
